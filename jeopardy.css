@@ -1,0 +1,78 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  text-align:center;
+}
+
+.start-btn{
+  margin-top:1rem;
+  margin-bottom:2rem;
+  padding:0.5rem;
+  font-size:2rem;
+  
+  background-color:rgb(8, 245, 245);
+  border-radius:10%;
+  border:0.2rem solid rgb(85, 215, 238);
+}
+
+.container{
+  display:flex;
+}
+
+table{
+  margin:auto;
+}
+
+thead td{
+  font-size:large;
+  font-weight:bold;
+}
+
+td{
+  padding:1rem;
+  min-height:15rem;
+  width:15rem;
+  border:1px solid black;
+  background-color:teal;
+  text-align:center;
+}
+
+.hidden{
+  display:none;
+  visibility: hidden;
+}
+
+.spinner{
+  position:absolute;
+  top:40%;
+  left:50%;
+  font-size:6rem;
+  opacity: 0.8;
+  animation: spin 2s linear infinite;
+}
+
+.blurred{
+  filter:blur(10px);
+}
+
+@keyframes spin{
+  from{
+    transform:rotate(0);
+    opacity:0.5;
+  }to{
+    transform:rotate(360deg);
+    opacity:1;
+  }
+}
